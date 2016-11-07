@@ -1,11 +1,31 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
-	border-top: 5px solid #000;
+	border-top: 3px solid #000;
 	background-color: #F0F0F0;
 	font-size: 12px;
 	color:#615e5e;
+	font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+	box-sizing: content-box;
 }
+
+a {
+	text-decoration: none;
+}
+
+ul,ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+.verticle-middle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+}
+
 #wrap{
 	text-align: center;
 	margin: 0 110px 0 130px;
@@ -15,7 +35,6 @@ body{
 	display: inline-block;
 	width: 25%;
 	float:left;
-	background-color: #FFF;
 	position: relative;
 }
 #right{
@@ -28,60 +47,84 @@ body{
 }
 #head{
 	width: 100%;
-    background-color: #000;
-    display: inline-block;
-    vertical-align: middle;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
 }
 #head > p{
 	font-size: 18px;
 	font-weight: bold;
 	color: #FFF;
 }
-.list1{
-	list-style: none;
+
+#nav-menu {
+	padding: 20px 0;
+	margin: 0;
+	font-size: 13px;
+	background-color: #fff;
 }
-.list1 > span{
-	margin-bottom: 5px;
+#nav-menu > a {
+	color: #444;
 }
-.first{
+#nav-menu > a > li {
+	position: relative;
+	padding-left: 55px;
+	line-height: 35px;
+	text-align: left;
+}
+#nav-menu > a > li:hover {
 	background-color: #F0F0F0;
 }
-.home{
+#nav-menu > a > li > .icon {
+	display: inline-block;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	background-size: cover;
+}
+
+.icon-home {
 	background-image: url(./imagine/home.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	display: inline-block;
 }
-.about{
+.icon-about {
 	background-image: url(./imagine/about.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	display: inline-block;
 }
-.catalog{
+.icon-catalog {
 	background-image: url(./imagine/catalog.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	display: inline-block;
 }
-.tag{
+.icon-tag {
 	background-image: url(./imagine/tag.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
+}
+
+#personal {
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 25px 60px;
+	font-size: 13px;
+}
+#personal > img {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 3px;
+}
+#personal > .data-box {
+	width: 100%;
+	margin-top: 30px;
+	white-space: nowrap;
+}
+
+#personal > .data-box > li {
 	display: inline-block;
+	width: 50%;
+	white-space: normal;;
 }
-img{
-	width: 60%;
+
+#personal > .data-box > li > .data-num {
+	margin: 0 0 5px;
+	font-size: 18px;
 }
-.list1 > li{
+
+.list1 > li {
 	margin-left: -80%;
 	height: 30px;
 	line-height: 30px;
