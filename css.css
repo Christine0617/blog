@@ -11,6 +11,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #615e5e;
 }
 
 ul,ol {
@@ -47,9 +48,9 @@ ul,ol {
 }
 #head{
 	width: 100%;
-  background-color: #000;
-  display: inline-block;
-  vertical-align: middle;
+    background-color: #000;
+    display: inline-block;
+    vertical-align: middle;
 }
 #head > p{
 	font-size: 18px;
@@ -124,20 +125,6 @@ ul,ol {
 	font-size: 18px;
 }
 
-.list1 > li {
-	margin-left: -80%;
-	height: 30px;
-	line-height: 30px;
-}
-.list1 > li:hover{
-	background-color: #F0F0F0;
-}
-.list2{
-	list-style: none;
-}
-.list2 > li{
-	float: left;
-}
 .cont{
 	margin:0 20px 0 20px;
 }
@@ -147,4 +134,27 @@ h1{
 }
 hr{
 	margin-top:100px;
+}
+
+.footer{
+	position: relative;
+	margin-top: 50PX;
+}
+
+.love {
+	background-image: url(./imagine/like_fill.png);
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	margin-right: 10px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+}
+
+.footer-name {
+	margin-left: 14px;
 }
