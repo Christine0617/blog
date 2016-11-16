@@ -158,3 +158,9 @@ hr{
 .footer-name {
 	margin-left: 14px;
 }
+
+@media (max-width: 980px) {
+		#left {
+        background: red;
+    }
+}
