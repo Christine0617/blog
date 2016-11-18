@@ -10,6 +10,7 @@
 	<div id="wrap">
 		<div id="left">
 			<div id="head">
+				<span id="list-icon" onclick="display()"></span>
 				<p>christine</p>
 				<p>welcome!</p>
 			</div>
@@ -56,5 +57,15 @@
 			</div>
 		</div>
 	</div>
+	<script src="http://zeptojs.com/zepto.min.js"></script>
+	<script type="text/javascript">
+		function display(){
+			if($('#nav-menu').css('display') ==  'none'){
+					$('#nav-menu').show();
+				}else{
+					$('#nav-menu').hide();
+				}
+		}
+	</script>
 </body>
 </html>
