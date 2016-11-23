@@ -177,7 +177,7 @@ hr{
 	#nav-menu,#personal {
 		display: none;
 	}
-	
+
 	#left {
 		width: 100%;
 	}
@@ -196,5 +196,10 @@ hr{
 		left: 30px;
 		background-color: #fff;
 		cursor: pointer;
+	}
+}
+@media (min-width: 961px) {
+  #nav-menu {
+		display: block !important;
 	}
 }
