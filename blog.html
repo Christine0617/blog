@@ -10,11 +10,11 @@
 	<div id="wrap">
 		<div id="left">
 			<div id="head">
-				<span id="list-icon" onclick="display()"></span>
+				<span id="list-icon" onclick="toggleNavMenuShow()"></span>
 				<p>christine</p>
 				<p>welcome!</p>
 			</div>
-			<ul id="nav-menu">
+			<ul id="nav-menu" class="nav-menu-hide">
 				<a href="#">
 					<li><span class="icon icon-home verticle-middle"></span>首页</li>
 				</a>
@@ -59,12 +59,14 @@
 	</div>
 	<script src="http://zeptojs.com/zepto.min.js"></script>
 	<script type="text/javascript">
-		function display(){
-			if($('#nav-menu').css('display') ==  'none'){
+		function toggleNavMenuShow() {
+			if($('#nav-menu').hasClass('nav-menu-hide')){
 					$('#nav-menu').show();
-				}else{
+					$('#nav-menu').removeClass('nav-menu-hide');
+			}else{
 					$('#nav-menu').hide();
-				}
+					$('#nav-menu').addClass('nav-menu-hide');
+			}
 		}
 	</script>
 </body>
